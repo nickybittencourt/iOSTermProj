@@ -3,8 +3,8 @@
     <entity name="Quote" representedClassName="Quote" syncable="YES" codeGenerationType="class">
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="quote" optional="YES" attributeType="String"/>
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="quote" attributeType="String" minValueString="1"/>
+        <attribute name="timestamp" attributeType="String"/>
     </entity>
     <elements>
         <element name="Quote" positionX="-63" positionY="-18" width="128" height="89"/>

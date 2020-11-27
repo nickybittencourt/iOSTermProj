@@ -16,6 +16,11 @@
 		AAF8FA182570D639006D5ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF8FA162570D639006D5ED9 /* LaunchScreen.storyboard */; };
 		AAF8FA232570D63A006D5ED9 /* KanyeWithMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA222570D63A006D5ED9 /* KanyeWithMeTests.swift */; };
 		AAF8FA2E2570D63A006D5ED9 /* KanyeWithMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA2D2570D63A006D5ED9 /* KanyeWithMeUITests.swift */; };
+		AAF8FA3F2570D749006D5ED9 /* KanyeQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA3E2570D749006D5ED9 /* KanyeQuote.swift */; };
+		AAF8FA442570D777006D5ED9 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA432570D777006D5ED9 /* Networker.swift */; };
+		AAF8FA4C2570F445006D5ED9 /* QuotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA4B2570F445006D5ED9 /* QuotesListViewController.swift */; };
+		AAF8FA54257109DB006D5ED9 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA53257109DB006D5ED9 /* TabViewController.swift */; };
+		AAF8FA5925710AF0006D5ED9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8FA5825710AF0006D5ED9 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		AAF8FA292570D63A006D5ED9 /* KanyeWithMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanyeWithMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF8FA2D2570D63A006D5ED9 /* KanyeWithMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanyeWithMeUITests.swift; sourceTree = "<group>"; };
 		AAF8FA2F2570D63A006D5ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF8FA3E2570D749006D5ED9 /* KanyeQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanyeQuote.swift; sourceTree = "<group>"; };
+		AAF8FA432570D777006D5ED9 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		AAF8FA4B2570F445006D5ED9 /* QuotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListViewController.swift; sourceTree = "<group>"; };
+		AAF8FA53257109DB006D5ED9 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		AAF8FA5825710AF0006D5ED9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +114,15 @@
 				AAF8FA082570D638006D5ED9 /* AppDelegate.swift */,
 				AAF8FA0A2570D638006D5ED9 /* SceneDelegate.swift */,
 				AAF8FA0C2570D638006D5ED9 /* ViewController.swift */,
+				AAF8FA4B2570F445006D5ED9 /* QuotesListViewController.swift */,
+				AAF8FA53257109DB006D5ED9 /* TabViewController.swift */,
+				AAF8FA5825710AF0006D5ED9 /* MapViewController.swift */,
 				AAF8FA0E2570D638006D5ED9 /* Main.storyboard */,
 				AAF8FA142570D639006D5ED9 /* Assets.xcassets */,
 				AAF8FA162570D639006D5ED9 /* LaunchScreen.storyboard */,
 				AAF8FA192570D639006D5ED9 /* Info.plist */,
+				AAF8FA3E2570D749006D5ED9 /* KanyeQuote.swift */,
+				AAF8FA432570D777006D5ED9 /* Networker.swift */,
 				AAF8FA112570D638006D5ED9 /* KanyeWithMe.xcdatamodeld */,
 			);
 			path = KanyeWithMe;
@@ -261,10 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF8FA54257109DB006D5ED9 /* TabViewController.swift in Sources */,
+				AAF8FA3F2570D749006D5ED9 /* KanyeQuote.swift in Sources */,
+				AAF8FA4C2570F445006D5ED9 /* QuotesListViewController.swift in Sources */,
 				AAF8FA0D2570D638006D5ED9 /* ViewController.swift in Sources */,
+				AAF8FA5925710AF0006D5ED9 /* MapViewController.swift in Sources */,
 				AAF8FA092570D638006D5ED9 /* AppDelegate.swift in Sources */,
 				AAF8FA132570D638006D5ED9 /* KanyeWithMe.xcdatamodeld in Sources */,
 				AAF8FA0B2570D638006D5ED9 /* SceneDelegate.swift in Sources */,
+				AAF8FA442570D777006D5ED9 /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
