@@ -35,6 +35,26 @@ class QuotesListViewController: UIViewController {
         
         quotesTableView.reloadData()
     }
+    
+    
+    @IBSegueAction func segueQuoteView(_ coder: NSCoder) -> QuoteViewController? {
+        
+        let vc = QuoteViewController(coder: coder)
+        
+        if let indexpath = quotesTableView.indexPathForSelectedRow {
+            
+            let quote = quotesList[indexpath.row]
+            vc?.quote = quote
+        }
+        
+        return vc
+    }
+    
+    @IBAction func deleteButton(_ sender: Any) {
+        
+        quotesTableView.isEditing = !quotesTableView.isEditing
+    }
+    
 }
 
 extension QuotesListViewController: UITableViewDataSource{
@@ -75,11 +95,8 @@ extension QuotesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
-}
-
-extension QuotesListViewController: UIAdaptivePresentationControllerDelegate {
     
-    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let indexPath = quotesTableView.indexPathForSelectedRow {
             

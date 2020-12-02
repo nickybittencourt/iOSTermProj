@@ -28,6 +28,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+    
     }
 
     @IBAction func getQuote(_ sender: Any) {
@@ -79,6 +80,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let containsQuote = storedQuotes.contains { quote in
             
             if (currentQuote?.quote == quote.quote) {
+                self.showToast(message: "You've already saved this quote!", font: .systemFont(ofSize: 16.0))
                 return true
             } else {
                 return false
@@ -107,3 +109,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 }
+
+extension UIViewController {
+
+func showToast(message : String, font: UIFont) {
+
+    let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 140, y: self.view.frame.size.height-250, width: 300, height: 35))
+    toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+    toastLabel.textColor = UIColor.white
+    toastLabel.font = font
+    toastLabel.textAlignment = .center;
+    toastLabel.text = message
+    toastLabel.alpha = 1.0
+    toastLabel.layer.cornerRadius = 10;
+    toastLabel.clipsToBounds  =  true
+    self.view.addSubview(toastLabel)
+    UIView.animate(withDuration: 3.5, delay: 0.1, options: .curveEaseOut, animations: {
+         toastLabel.alpha = 0.0
+    }, completion: {(isCompleted) in
+        toastLabel.removeFromSuperview()
+    })
+} }
